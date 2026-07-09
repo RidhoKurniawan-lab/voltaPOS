@@ -133,6 +133,16 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
 
                     {isAdmin && (
                         <NavLink
+                            href={route("register")}
+                            active={route().current("register.*")}
+                            icon="fas fa-user-plus"
+                        >
+                            Tambah Kasir
+                        </NavLink>
+                    )}
+
+                    {isAdmin && (
+                        <NavLink
                             href={route("reports.index")}
                             active={route().current("reports.*")}
                             icon="fas fa-chart-bar"

@@ -71,8 +71,8 @@ class ReportService
 
     protected function resolveDateRange(?string $startDate, ?string $endDate): array
     {
-        $defaultStart = Carbon::create(2026, 7, 1)->startOfMonth();
-        $defaultEnd = Carbon::create(2026, 7, 2)->startOfDay();
+        $defaultStart = Carbon::now()->startOfMonth();
+        $defaultEnd = Carbon::now();
 
         $resolvedStart = filled($startDate)
             ? Carbon::parse($startDate)->startOfDay()

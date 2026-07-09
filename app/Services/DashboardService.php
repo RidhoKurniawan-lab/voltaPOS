@@ -15,7 +15,7 @@ class DashboardService
     public function getDashboardData(): array
     {
         $user = auth()->user();
-        $today = Carbon::create(2026, 7, 2)->startOfDay();
+        $today = Carbon::now()->startOfDay();
 
         return $user->role === 'admin'
             ? $this->getAdminDashboardData($today)

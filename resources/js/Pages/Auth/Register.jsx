@@ -137,12 +137,11 @@ const Register = () => {
                 {/* Login Link */}
                 <div className="flex items-center justify-center text-sm">
                     <p className="text-slate-600 text-xs">
-                        Sudah punya akun?
                         <Link
-                            href={route("login")}
+                            href={route("dashboard")}
                             className="text-emerald-600 hover:text-emerald-700 font-semibold ml-1 transition-colors"
                         >
-                            Login
+                            Back?
                         </Link>
                     </p>
                 </div>

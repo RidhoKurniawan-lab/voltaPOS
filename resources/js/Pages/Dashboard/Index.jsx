@@ -125,7 +125,7 @@ export default function Index(props) {
         day: "2-digit",
         month: "long",
         year: "numeric",
-    }).format(new Date(`${props.today}T00:00:00`));
+    }).format(new Date(props.today.replace(/-/g, "/")));
 
     const openReceiptPreview = (sale) => {
         setSelectedSale(sale);

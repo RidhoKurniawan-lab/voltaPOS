@@ -72,24 +72,6 @@ const Login = () => {
                 <SubmitButton icon="fas fa-arrow-right" loading={processing}>
                     Login
                 </SubmitButton>
-
-                <div className="flex items-center justify-between text-sm">
-                    <label className="flex items-center gap-1.5 text-slate-700 cursor-pointer">
-                        <input
-                            type="checkbox"
-                            className="w-3.5 h-3.5 rounded border-slate-300 bg-white text-emerald-600 focus:ring-emerald-600 focus:ring-2"
-                        />
-                        <span className="text-xs text-slate-700">
-                            Ingat saya
-                        </span>
-                    </label>
-                    <a
-                        href="#"
-                        className="text-emerald-700 hover:text-emerald-600 text-xs font-medium transition-colors"
-                    >
-                        Lupa password?
-                    </a>
-                </div>
             </form>
 
             <div className="mt-6 pt-5 border-t border-slate-200 text-center">
@@ -97,12 +79,6 @@ const Login = () => {
                     Akun baru hanya dapat dibuat oleh admin melalui dashboard
                     internal.
                 </p>
-                <Link
-                    href={route("login")}
-                    className="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-emerald-600 hover:text-emerald-700"
-                >
-                    Tetap di halaman login
-                </Link>
             </div>
         </>
     );
